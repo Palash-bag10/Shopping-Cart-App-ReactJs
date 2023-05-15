@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+.spinner {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: repeating-conic-gradient(#f6ff47 0 90deg,#1b1c1c 0 180deg);
+  animation: spinner-a78xsi 1s infinite linear;
+}
+
+@keyframes spinner-a78xsi {
+  100% {
+     transform: rotate(1turn);
+  }
+}
